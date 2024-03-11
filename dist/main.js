@@ -1,1 +1,1 @@
-(()=>{"use strict";(()=>{const l=document.querySelectorAll(".callback-btn"),c=document.querySelector(".modal-overlay");console.log(c),l.forEach((l=>{l.addEventListener("click",(()=>{c.style.display="block",console.log("click")}))}))})()})();
+(()=>{"use strict";(()=>{const e=document.querySelectorAll(".callback-btn"),l=document.querySelector(".modal-overlay");console.log(l),e.forEach((e=>{e.addEventListener("click",(()=>{l.style.display="flex",console.log("click")}))}))})()})();

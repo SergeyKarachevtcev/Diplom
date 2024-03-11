@@ -8,7 +8,7 @@ const modal = () => {
 	callbackBtns.forEach((btn) => {
 		// повесил событие на кнопки
 		btn.addEventListener("click", () => {
-			modalOverlay.style.display = "block";
+			modalOverlay.style.display = "flex";
 			console.log("click");
 		});
 	});
