@@ -1,1 +1,5 @@
-console.log("hello!!!! руддлои");
+"use strict";
+
+import modal from "./modules/modal";
+
+modal();

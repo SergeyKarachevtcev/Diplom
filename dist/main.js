@@ -1,1 +1,1 @@
-console.log("hello!!!! руддлои");
+(()=>{"use strict";(()=>{const e=document.getElementById("callbackBtn");document.querySelector(".modal-overlay"),document.getElementById("callback"),e.addEventListener("click",(function(e){console.log("Клик по ссылке произошел!")}))})()})();

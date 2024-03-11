@@ -547,10 +547,12 @@ a.absolute {
 	}
 	40% {
 		opacity: 0.5;
-		box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #e9bb26, 0 0 0 10px rgba(255, 255, 255, 0.3);
+		box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #e9bb26,
+			0 0 0 10px rgba(255, 255, 255, 0.3);
 	}
 	90% {
-		box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #e9bb26, 0 0 0 10px rgba(255, 255, 255, 0.3);
+		box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #e9bb26,
+			0 0 0 10px rgba(255, 255, 255, 0.3);
 		-webkit-transform: scale(1.5);
 		opacity: 0;
 	}
@@ -561,10 +563,12 @@ a.absolute {
 	}
 	40% {
 		opacity: 0.5;
-		box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #e9bb26, 0 0 0 10px rgba(255, 255, 255, 0.3);
+		box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #e9bb26,
+			0 0 0 10px rgba(255, 255, 255, 0.3);
 	}
 	100% {
-		box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #e9bb26, 0 0 0 10px rgba(255, 255, 255, 0.3);
+		box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #e9bb26,
+			0 0 0 10px rgba(255, 255, 255, 0.3);
 		-moz-transform: scale(1.5);
 		opacity: 0;
 	}
@@ -575,10 +579,12 @@ a.absolute {
 	}
 	40% {
 		opacity: 0.5;
-		box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #e9bb26, 0 0 0 10px rgba(255, 255, 255, 0.3);
+		box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #e9bb26,
+			0 0 0 10px rgba(255, 255, 255, 0.3);
 	}
 	100% {
-		box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #e9bb26, 0 0 0 10px rgba(255, 255, 255, 0.3);
+		box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #e9bb26,
+			0 0 0 10px rgba(255, 255, 255, 0.3);
 		transform: scale(1.5);
 		opacity: 0;
 	}
