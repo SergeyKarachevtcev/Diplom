@@ -1,15 +1,16 @@
 "use strict";
 
 const modal = () => {
-	const callbackBtn = document.getElementById("callbackBtn"); // кнопка коллбек
-	const modalOverlay = document.querySelector(".modal-overlay"); // подложка
-	const modalCallback = document.getElementById("modalCallback"); // модальное окно
+	const callbackBtns = document.querySelectorAll(".callback-btn"); // нашли кнопки
+	const modalOverlay = document.querySelector(".modal-overlay");
+	console.log(modalOverlay);
 
-	// Назначаем обработчик события по клику
-	callbackBtn.addEventListener("click", function (event) {
-		// Ваше действие при клике на ссылку
-		console.log("Клик по ссылке произошел!");
-		modalOverlay.style.display = "block";
+	callbackBtns.forEach((btn) => {
+		// повесил событие на кнопки
+		btn.addEventListener("click", () => {
+			modalOverlay.style.display = "block";
+			console.log("click");
+		});
 	});
 };
 
