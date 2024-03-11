@@ -1,0 +1,16 @@
+{
+	"name": "easy-level-diplom",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "webpack",
+		"watch": "webpack --watch"
+	},
+	"author": "Sergey Karachewtcev",
+	"license": "ISC",
+	"devDependencies": {
+		"webpack": "^5.90.3",
+		"webpack-cli": "^5.1.4"
+	}
+}
