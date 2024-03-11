@@ -2,8 +2,8 @@
 
 const modal = () => {
 	const callbackBtns = document.querySelectorAll(".callback-btn"); // нашли кнопки
-	const modalOverlay = document.querySelector(".modal-overlay");
-	const modalCallback = document.querySelector(".modal-callback");
+	const modalOverlay = document.querySelector(".modal-overlay");// подложка
+	const modalCallback = document.querySelector(".modal-callback");// модалка
 	console.log(modalCallback);
 
 	callbackBtns.forEach((btn) => {
