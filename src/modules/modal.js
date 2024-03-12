@@ -1,19 +1,45 @@
 "use strict";
 
 const modal = () => {
-	const callbackBtns = document.querySelectorAll(".callback-btn"); // нашли кнопки
-	const modalOverlay = document.querySelector(".modal-overlay");// подложка
-	const modalCallback = document.querySelector(".modal-callback");// модалка
-	console.log(modalCallback);
+	const callbackBtns = document.querySelectorAll(".callback-btn");
+	const modalOverlay = document.querySelector(".modal-overlay");
+	const modalCallback = document.querySelector(".modal-callback");
+	const modalCloseBtn = document.querySelector(".modal-close");
+	const buttonServices = document.querySelector(".button-services");
+	const fancyboxModal = document.querySelectorAll(".fancyboxModal");
+
+
+	const closeModalFunction = () => {
+		modalOverlay.style.display = "none";
+		modalCallback.style.display = "none";
+	};
+
+	const openModalFunction = () => {
+		modalOverlay.style.display = "flex";
+		modalCallback.style.display = "block";
+	};
 
 	callbackBtns.forEach((btn) => {
-		// повесил событие на кнопки
 		btn.addEventListener("click", () => {
-			modalOverlay.style.display = "flex";
-			modalCallback.style.display = "block";
-			console.log("click");
+			openModalFunction();
 		});
 	});
+
+	fancyboxModal.forEach((btn) => {
+		btn.addEventListener("click", () => {
+			openModalFunction();
+		});
+	});
+
+	buttonServices.addEventListener("click", () => {
+		openModalFunction();
+	});
+
+	modalCloseBtn.addEventListener("click", () => {
+		closeModalFunction();
+	});
 };
+
+modal();
 
 export default modal;
