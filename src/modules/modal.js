@@ -8,7 +8,6 @@ const modal = () => {
 	const buttonServices = document.querySelector(".button-services");
 	const fancyboxModal = document.querySelectorAll(".fancyboxModal");
 
-
 	const closeModalFunction = () => {
 		modalOverlay.style.display = "none";
 		modalCallback.style.display = "none";
@@ -37,6 +36,12 @@ const modal = () => {
 
 	modalCloseBtn.addEventListener("click", () => {
 		closeModalFunction();
+	});
+
+	modalOverlay.addEventListener("click", (e) => {
+		if (!e.target.closest(".modal-callback")) {
+			closeModalFunction();
+		}
 	});
 };
 
