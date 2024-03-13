@@ -4,8 +4,6 @@ const hiddenElement = () => {
 	const upBtn = document.querySelector(".up");
 	const servicesSection = document.getElementById("services");
 
-	console.log(servicesSection);
-
 	window.addEventListener("scroll", () => {
 		const servicesSectionPosition =
 			servicesSection.getBoundingClientRect().top;
