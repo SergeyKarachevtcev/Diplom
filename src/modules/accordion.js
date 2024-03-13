@@ -5,10 +5,6 @@ const accordeon = () => {
 	const elementAccordeon = accordeon.querySelectorAll(".element");
 	let elementContent = accordeon.querySelectorAll(".element-content");
 
-	/* 	elementContent.forEach((e) => {
-		e.style.display = "none";
-	}); */
-
 	elementAccordeon.forEach((element) => {
 		element.addEventListener("click", (e) => {
 			if (e.target.closest(".element")) {
