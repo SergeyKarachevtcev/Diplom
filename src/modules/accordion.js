@@ -3,7 +3,6 @@
 const accordeon = () => {
     const accordeon = document.querySelector('.accordeon');
     const elementAccordeon = accordeon.querySelectorAll('.element');
-    let elementContent = accordeon.querySelectorAll('.element-content');
 
     elementAccordeon.forEach((element) => {
         element.addEventListener('click', (e) => {

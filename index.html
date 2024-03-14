@@ -486,45 +486,41 @@
             <!-- * * * * * * Contacts section: end * * * * * * -->
 
             <!-- * * * * * * map section * * * * * * -->
-            <!-- 			<section class="map-section">
-				<script
-					src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU"
-					type="text/javascript"
-				></script>
-				<div id="mapexMap"></div>
-				<script type="text/javascript">
-					ymaps.ready(function () {
-						var mapexMap = new ymaps.Map("mapexMap", {
-								center: [44.84373337182117, 37.65565927116387], // центр карты
-								zoom: 16, // масштаб
-								controls: ["zoomControl"],
-							}),
-							myPlacemark = new ymaps.Placemark(
-								[44.84373337182117, 37.65565927116387], // координаты маркера
-								{
-									iconContent: "",
-									balloonContentBody:
-										"г. Ваш город, Проспект Дзержинского д. 211",
-									balloonContentHeader: "",
-								}, // контент маркера
-								{
-									// Опции.
-									// Необходимо указать данный тип макета.
-									iconLayout: "default#image",
-									// Своё изображение иконки метки.
-									iconImageHref: "images/marker.png",
-									// Размеры метки.
-									iconImageSize: [31, 45],
-									// Смещение левого верхнего угла иконки относительно
-									// её "ножки" (точки привязки).
-									iconImageOffset: [-16, -45],
-								}
-							);
-						mapexMap.behaviors.disable("scrollZoom");
-						mapexMap.geoObjects.add(myPlacemark);
-					});
-				</script>
-			</section> -->
+            <section class="map-section">
+                <script src="https://api-maps.yandex.ru/2.1/?apikey=fea2b970-4047-4c53-af1e-2e9c9d2f7c3d&lang=en_US" type="text/javascript"></script>
+                <div id="mapexMap"></div>
+                <script type="text/javascript">
+                    ymaps.ready(function () {
+                        var mapexMap = new ymaps.Map('mapexMap', {
+                                center: [44.84373337182117, 37.65565927116387], // центр карты
+                                zoom: 16, // масштаб
+                                controls: ['zoomControl'],
+                            }),
+                            myPlacemark = new ymaps.Placemark(
+                                [44.84373337182117, 37.65565927116387], // координаты маркера
+                                {
+                                    iconContent: '',
+                                    balloonContentBody: 'г. Ваш город, Проспект Дзержинского д. 211',
+                                    balloonContentHeader: '',
+                                }, // контент маркера
+                                {
+                                    // Опции.
+                                    // Необходимо указать данный тип макета.
+                                    iconLayout: 'default#image',
+                                    // Своё изображение иконки метки.
+                                    iconImageHref: 'images/marker.png',
+                                    // Размеры метки.
+                                    iconImageSize: [31, 45],
+                                    // Смещение левого верхнего угла иконки относительно
+                                    // её "ножки" (точки привязки).
+                                    iconImageOffset: [-16, -45],
+                                }
+                            );
+                        mapexMap.behaviors.disable('scrollZoom');
+                        mapexMap.geoObjects.add(myPlacemark);
+                    });
+                </script>
+            </section>
             <!-- * * * * * * map section: end * * * * * * -->
 
             <div class="footer-push"></div>
