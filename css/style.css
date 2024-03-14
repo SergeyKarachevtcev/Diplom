@@ -1107,8 +1107,11 @@ video#video_background {
 }
 
 .arrow-left {
-    transform: rotate(180deg);
+    /* transform: rotate(180deg); */
     margin-right: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .arrow-right {
@@ -1340,4 +1343,15 @@ video#video_background {
     background-color: #19b5fe;
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
+}
+
+.swiper-button {
+    border: none;
+    background: transparent;
+}
+
+.arrow-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

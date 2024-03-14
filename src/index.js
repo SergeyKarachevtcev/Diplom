@@ -12,9 +12,12 @@ import sendForm from './modules/sendForm';
 
 import slider from './modules/slider';
 
+import servicesCarousel from './modules/servicesCarousel';
+
 modal();
 anchorLink();
 hiddenElement();
 accordion();
 sendForm({ formId: 'form1', sumeElem: [] });
 slider();
+servicesCarousel();
