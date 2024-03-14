@@ -1,20 +1,20 @@
-"use strict";
+'use strict';
 
 const hiddenElement = () => {
-	const upBtn = document.querySelector(".up");
-	const servicesSection = document.getElementById("services");
+    const upBtn = document.querySelector('.up');
+    const servicesSection = document.getElementById('services');
 
-	window.addEventListener("scroll", () => {
-		const servicesSectionPosition =
-			servicesSection.getBoundingClientRect().top;
-		const windowHeight = window.innerHeight;
+    window.addEventListener('scroll', () => {
+        const servicesSectionPosition =
+            servicesSection.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
 
-		if (servicesSectionPosition < windowHeight) {
-			upBtn.style.opacity = "1";
-		} else {
-			upBtn.style.opacity = "0";
-		}
-	});
+        if (servicesSectionPosition < windowHeight) {
+            upBtn.style.opacity = '1';
+        } else {
+            upBtn.style.opacity = '0';
+        }
+    });
 };
 
 export default hiddenElement;
