@@ -10,6 +10,8 @@ import accordion from "./modules/accordion";
 
 import sendForm from "./modules/sendForm";
 
+
+
 modal();
 anchorLink();
 hiddenElement();
