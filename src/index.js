@@ -14,6 +14,8 @@ import slider from './modules/slider';
 
 import servicesCarousel from './modules/servicesCarousel';
 
+import validation from './modules/validation';
+
 modal();
 anchorLink();
 hiddenElement();
@@ -21,3 +23,4 @@ accordion();
 sendForm({ formId: 'form1', sumeElem: [] });
 slider();
 servicesCarousel();
+validation();

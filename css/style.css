@@ -1340,7 +1340,7 @@ video#video_background {
 }
 
 .dot-active {
-    background-color: #19b5fe;
+    background-color: #e9bb26;
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
 }
