@@ -11,14 +11,18 @@ const accordeon = () => {
                 const tabBtn = e.target.closest('.element');
                 elementAccordeon.forEach((tab, index) => {
                     if (tab === tabBtn) {
-                        tab.classList.add('active');
-                        let elementContent =
-                            tab.querySelector('.element-content');
-                        elementContent.style.display = 'block';
+                        if (!tab.classList.contains('active')) {
+                            tab.classList.add('active');
+                            let elementContent = tab.querySelector('.element-content');
+                            elementContent.style.display = 'block';
+                        } else {
+                            tab.classList.remove('active');
+                            let elementContent = tab.querySelector('.element-content');
+                            elementContent.style.display = 'none';
+                        }
                     } else {
                         tab.classList.remove('active');
-                        let elementContent =
-                            tab.querySelector('.element-content');
+                        let elementContent = tab.querySelector('.element-content');
                         elementContent.style.display = 'none';
                     }
                 });
