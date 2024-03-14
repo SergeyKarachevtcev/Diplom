@@ -16,6 +16,8 @@ import servicesCarousel from './modules/servicesCarousel';
 
 import validation from './modules/validation';
 
+import mobileMenu from './modules/mobileMenu';
+
 modal();
 anchorLink();
 hiddenElement();
@@ -24,3 +26,4 @@ sendForm({ formId: 'form1', sumeElem: [] });
 slider();
 servicesCarousel();
 validation();
+mobileMenu();
