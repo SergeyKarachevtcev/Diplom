@@ -28,6 +28,13 @@ const mobileMenu = () => {
             closeModalFunction();
         });
     });
+
+    document.addEventListener('click', (event) => {
+        const targetElement = event.target;
+        if (!mobileMenu.contains(targetElement) && targetElement !== mobmenuBtn) {
+            closeModalFunction();
+        }
+    });
 };
 
 export default mobileMenu;
