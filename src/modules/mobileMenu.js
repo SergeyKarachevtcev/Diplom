@@ -3,10 +3,12 @@ const mobileMenu = () => {
     const mobileMenu = document.querySelector('.mobile-menu');
     const mobileMenuCloseBtn = document.querySelector('.close');
     const mobileMenuLinks = mobileMenu.querySelectorAll('.mobile-links');
+    const modalOverlay = document.querySelector('.modal-overlay');
 
     const closeModalFunction = () => {
         mobileMenu.style.right = '-400px';
         mobileMenuCloseBtn.style.display = 'none';
+        modalOverlay.style.display = 'none';
     };
 
     mobmenuBtn.addEventListener('click', () => {
@@ -16,6 +18,7 @@ const mobileMenu = () => {
         } else {
             mobileMenu.style.right = '0px';
             mobileMenuCloseBtn.style.display = 'block';
+            modalOverlay.style.display = 'flex';
         }
     });
 
@@ -29,9 +32,8 @@ const mobileMenu = () => {
         });
     });
 
-    document.addEventListener('click', (event) => {
-        const targetElement = event.target;
-        if (!mobileMenu.contains(targetElement) && targetElement !== mobmenuBtn) {
+    modalOverlay.addEventListener('click', (e) => {
+        if (!e.target.closest('.mobile-menu')) {
             closeModalFunction();
         }
     });
