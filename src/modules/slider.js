@@ -5,7 +5,7 @@ const slider = () => {
     const slides = document.querySelectorAll('.portfolio-item');
     const portfolioDots = document.querySelector('.portfolio-dots');
     let dots = document.querySelectorAll('.dot');
-    let timerInterval = 10000;
+    let timerInterval = 3000;
     let currentSlide = 0;
     let interval;
     const createDot = () => {

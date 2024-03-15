@@ -14,7 +14,7 @@ const validation = () => {
     inputPhone.forEach((input) => {
         input.addEventListener('input', (event) => {
             const inputValue = event.target.value;
-            const onlyDigitsAndSymbols = inputValue.replace(/[^\d()\-]/g, '');
+            const onlyDigitsAndSymbols = inputValue.replace(/[^\d()+\-]/g, '');
             event.target.value = onlyDigitsAndSymbols;
         });
     });

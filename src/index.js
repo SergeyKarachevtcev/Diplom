@@ -18,6 +18,7 @@ import validation from './modules/validation';
 
 import mobileMenu from './modules/mobileMenu';
 
+
 modal();
 anchorLink();
 hiddenElement();
