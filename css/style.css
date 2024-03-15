@@ -291,7 +291,7 @@ a.absolute {
     max-width: 100%;
     background: #fff;
     padding: 55px 25px 35px;
-    z-index: 99;
+    z-index: 1500;
 }
 #responseMessage .modal-content.error {
     color: #2fab6d;
