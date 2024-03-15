@@ -5,6 +5,7 @@ const mobileMenu = () => {
     const mobileMenuLinks = mobileMenu.querySelectorAll('.mobile-links');
     const modalOverlay = document.querySelector('.modal-overlay');
     const modalCallback = document.querySelector('.modal-callback');
+    const callbackBtnMobile = document.getElementById('callback-btn-mobile');
 
     const closeModalFunction = () => {
         mobileMenu.style.right = '-400px';
@@ -21,7 +22,12 @@ const mobileMenu = () => {
             mobileMenu.style.right = '0px';
             mobileMenuCloseBtn.style.display = 'block';
             modalOverlay.style.display = 'flex';
+            modalOverlay.style.zIndex = '99';
         }
+    });
+
+    callbackBtnMobile.addEventListener('click', () => {
+        modalOverlay.style.zIndex = '1500';
     });
 
     mobileMenuCloseBtn.addEventListener('click', () => {
