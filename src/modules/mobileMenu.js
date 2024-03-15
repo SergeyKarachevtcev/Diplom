@@ -4,11 +4,13 @@ const mobileMenu = () => {
     const mobileMenuCloseBtn = document.querySelector('.close');
     const mobileMenuLinks = mobileMenu.querySelectorAll('.mobile-links');
     const modalOverlay = document.querySelector('.modal-overlay');
+    const modalCallback = document.querySelector('.modal-callback');
 
     const closeModalFunction = () => {
         mobileMenu.style.right = '-400px';
         mobileMenuCloseBtn.style.display = 'none';
         modalOverlay.style.display = 'none';
+        modalCallback.style.display = 'none';
     };
 
     mobmenuBtn.addEventListener('click', () => {
